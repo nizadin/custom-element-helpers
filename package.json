@@ -1,0 +1,32 @@
+{
+  "name": "custom-element-helpers",
+  "version": "0.1.0",
+  "description": "Custom element helpers",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "tsc": "tsc",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Hazeman28/custom-element-helpers.git"
+  },
+  "keywords": [
+    "custom",
+    "elements",
+    "javascript",
+    "css",
+    "script",
+    "modules"
+  ],
+  "author": "Nizomiddin Toshpulatov <niza@outlook.sk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hazeman28/custom-element-helpers/issues"
+  },
+  "homepage": "https://github.com/Hazeman28/custom-element-helpers#readme",
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}
