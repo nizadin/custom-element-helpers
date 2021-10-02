@@ -1,5 +1,16 @@
 import { CustomElementTemplateParam } from "./types";
 
+export function getTemplateFetchParams(template?: CustomElementTemplateParam) {
+  return (Array.isArray(template) || typeof template === "object")
+    ? template
+    : typeof template === "string"
+    ? [
+      `./${template.split("/").pop()?.replace(/\..+$/, ".html")}`,
+      template
+    ]
+    : [];
+}
+
 export async function fetchTemplate(
   templatePath?: string,
   moduleURL?: string,
@@ -50,17 +61,6 @@ export function formatCustomElementName(name?: string) {
 
       return lowerCase;
     }).join("")
-}
-
-export function getTemplateFetchParams(template?: CustomElementTemplateParam) {
-  return (Array.isArray(template) || typeof template === "object")
-    ? template
-    : typeof template === "string"
-    ? [
-      `./${template.split("/").pop()?.replace(/\..+$/, ".html")}`,
-      template
-    ]
-    : [];
 }
 
 export function trimInnerHTML(element: HTMLElement) {
