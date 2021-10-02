@@ -1,5 +1,5 @@
 import { useAttribute } from "./hooks.js";
-import { CustomElementDefinition, CustomElementDefinitionParams } from "./types.js";
+import type { CustomElementDefinition, CustomElementDefinitionParams } from "./types.js";
 import { fetchTemplate, formatCustomElementName, getTemplateFetchParams } from "./utils.js";
 
 export async function createCustomElementDefinition({

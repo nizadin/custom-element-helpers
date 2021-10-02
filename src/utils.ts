@@ -1,4 +1,4 @@
-import { CustomElementTemplateParam } from "./types";
+import type { CustomElementTemplateParam } from "./types";
 
 export function getTemplateFetchParams(template?: CustomElementTemplateParam) {
   return (Array.isArray(template) || typeof template === "object")

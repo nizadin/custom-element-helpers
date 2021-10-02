@@ -1,4 +1,4 @@
-import { UseAttribute } from "./types";
+import type { UseAttribute } from "./types";
 
 function getAttributeValue(
   element: HTMLElement,
